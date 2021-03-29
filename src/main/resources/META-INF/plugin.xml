@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>org.example.intellij-modeline</id>
+    <name>IntelliJ Modeline</name>
+    <vendor email="peshkovroman@gmail.com" url="https://rpeshkov.net">Roman Peshkov</vendor>
+
+    <description><![CDATA[
+    This plugin adds modeline support for IntelliJ based IDEs
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <projectListeners>
+        <listener class="FilesOpenListener" topic="com.intellij.openapi.fileEditor.FileEditorManagerListener" />
+        <listener class="FilesDocumentListener" topic="com.intellij.openapi.vfs.newvfs.BulkFileListener" />
+    </projectListeners>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+
+        <postStartupActivity implementation="Plugin" />
+        <notificationGroup id="Modeline" displayType="BALLOON"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
