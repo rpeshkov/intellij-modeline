@@ -13,7 +13,7 @@
     <depends>com.intellij.modules.platform</depends>
 
     <projectListeners>
-        <listener class="FilesOpenListener" topic="com.intellij.openapi.fileEditor.FileEditorManagerListener" />
+        <listener class="FileOpenListener" topic="com.intellij.openapi.fileEditor.FileEditorManagerListener" />
         <listener class="FilesDocumentListener" topic="com.intellij.openapi.vfs.newvfs.BulkFileListener" />
     </projectListeners>
 
