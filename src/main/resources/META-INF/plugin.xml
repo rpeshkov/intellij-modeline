@@ -1,8 +1,9 @@
-<idea-plugin>
+<idea-plugin url="https://github.com/rpeshkov/intellij-modeline">
     <id>org.example.intellij-modeline</id>
     <name>IntelliJ Modeline</name>
     <vendor email="peshkovroman@gmail.com" url="https://rpeshkov.net">Roman Peshkov</vendor>
 
+    <category>UI</category>
     <description><![CDATA[
     This plugin adds modeline support for IntelliJ based IDEs
     ]]></description>
