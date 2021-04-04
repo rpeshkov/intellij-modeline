@@ -22,6 +22,12 @@
 
         <postStartupActivity implementation="Plugin" />
         <notificationGroup id="Modeline" displayType="BALLOON"/>
+        <applicationService serviceImplementation="net.rpeshkov.modeline.config.ModelineConfig"/>
+
+        <applicationConfigurable groupId="tools" displayName="Modeline"
+                                 instance="net.rpeshkov.modeline.config.ModelineConfigurable"
+                                 id="preferences.ModelineConfigurable" dynamic="true"/>
+
     </extensions>
 
     <actions>
